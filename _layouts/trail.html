@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article class="post">
+    <h1>{{ page.title }}</h1>
+
+    {% if page.trail_name %}<h2>Trail Name: {{ page.trail_name }}</h2>{% endif %}
+    {% if page.park_name %}<h2>Park Name: {{ page.park_name }}</h2>{% endif %}
+    {% if page.park_location %}<h2>Park Location: {{ page.park_location }}</h2>{% endif %}
+    {% if page.link %}<h2>Link: <a href="{{ page.link }}">Click here</a></h2>{% endif %}
+
+    <div class="entry">
+        {{ content }}
+    </div>
+
+    <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+
+    {% include disqus.html %}
+</article>
