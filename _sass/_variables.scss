@@ -1,4 +1,4 @@
-
+@import url('https://rsms.me/inter/inter.css');
 //
 // VARIABLES
 //
@@ -15,9 +15,9 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$helvetica: 'Inter', sans-serif;
+$helveticaNeue: 'Inter', sans-serif;
+$georgia: 'Inter', sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
